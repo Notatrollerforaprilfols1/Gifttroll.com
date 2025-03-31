@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important GitHub Update</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loading important Giftcard...</h1>
+    <div id="video-container">
+        <iframe id="rickroll" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&loop=1&playlist=dQw4w9WgXcQ&controls=0&disablekb=1" allow="autoplay"></iframe>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.getElementById('rickroll').src += "&mute=0"; // Ensures sound plays
+        }, 500); // Small delay in case autoplay gets blocked
+    </script>
+</body>
+</html>
